@@ -1,0 +1,12 @@
+# This docker-compose file is to run unit tests on Docker.
+version: "3.7"
+
+services:
+  bench:
+    build: .
+    image: benchmark:local
+    volumes:
+      - ./SampleBench.php:/app/SampleBench.php
+      - ./composer.json:/app/composer.json
+      - ./phpbench.json:/app/phpbench.json
+    entrypoint: [ "composer", "bench-summary" ]

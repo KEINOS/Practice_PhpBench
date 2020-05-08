@@ -1,0 +1,10 @@
+{
+    "require-dev": {
+        "phpbench/phpbench": "^0.16 || ^0.15 || ^0.14 || ^0.13 || ^0.12 || ^0.10"
+    },
+    "scripts": {
+        "bench-summary": "./vendor/bin/phpbench run ./SampleBench.php --report=summary --retry-threshold=2",
+        "bench-memory": "./vendor/bin/phpbench run ./SampleBench.php --report=memory --retry-threshold=2",
+        "bench-time": "./vendor/bin/phpbench run ./SampleBench.php --report=time --retry-threshold=2"
+    }
+}
