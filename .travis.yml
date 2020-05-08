@@ -21,11 +21,9 @@ matrix:
       dist: bionic
     - php: nightly
       dist: bionic
-
-script: composer bench-summary && composer bench-memory && composer bench-time
-
-jobs:
   allow_failures:
     - php: 5.6
     - php: 7.0
     - php: nightly
+
+script: composer bench-summary && composer bench-memory && composer bench-time
