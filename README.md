@@ -1,5 +1,5 @@
 [![](https://travis-ci.org/KEINOS/Practice_PhpBench.svg?branch=master)](https://travis-ci.org/KEINOS/Practice_PhpBench "Travis CI Build Status")
-[![](https://img.shields.io/packagist/php-v/keinos/practice_phpbench)](https://github.com/keinos/practice_phpbench/blob/master/.travis.yml "Supported PHP Version")
+[![](https://img.shields.io/travis/php-v/KEINOS/Practice_PhpBench/master)](https://github.com/keinos/practice_phpbench/blob/master/.travis.yml "Supported PHP Version")
 
 # Practice of PHPBench
 
