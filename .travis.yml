@@ -4,12 +4,6 @@ install: composer install
 
 matrix:
   include:
-    - php: 5.3
-      dist: precise
-    - php: 5.4
-      dist: trusty
-    - php: 5.5
-      dist: trusty
     - php: 5.6
       dist: xenial
     - php: 7.0
@@ -29,3 +23,9 @@ matrix:
       dist: bionic
 
 script: composer bench-summary && composer bench-memory && composer bench-time
+
+jobs:
+  allow_failures:
+    - php: 5.6
+    - php: 7.0
+    - php: nightly
