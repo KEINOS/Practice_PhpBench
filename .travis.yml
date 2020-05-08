@@ -26,4 +26,4 @@ matrix:
     - php: 7.0
     - php: nightly
 
-script: composer bench-summary && composer bench-memory && composer bench-time
+script: ./vendor/bin/phpbench --version && composer bench-summary && composer bench-memory && composer bench-time
